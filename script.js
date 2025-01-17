@@ -16,22 +16,20 @@ function submit() {
      
     
 
-}
+};
 
-function clear() {
+function clearValue() {
   //var inp = document.getElementById("numInp");
   inp.value = 0;
   var cleared = document.getElementById("clear");
-  var inpVal = parseFloat(inp.value);
-  if (!isNaN(inpVal)) {
-    console.log("Cleared, your value is " + inpVal);
-  }
+  console.log("Cleared, your value is", inp.value);
+  
 
   
-}
+};
 
 function add() {
   
+  console.log("Add works");
 
-
-}
+};
