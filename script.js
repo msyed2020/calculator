@@ -19,11 +19,13 @@ function submit() {
 }
 
 function clear() {
-  var inp = document.getElementById("numInp");
-    inp.value = 0;
-    var cleared = document.getElementById("clear");
-    var inpVal = parseFloat(inp.value);
+  //var inp = document.getElementById("numInp");
+  inp.value = 0;
+  var cleared = document.getElementById("clear");
+  var inpVal = parseFloat(inp.value);
+  if (!isNaN(inpVal)) {
     console.log("Cleared, your value is " + inpVal);
+  }
 
   
 }
