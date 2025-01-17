@@ -22,7 +22,7 @@ function submit() {
 function clear() {
   inp.value = 0;
   var cleared = document.getElementById("clear");
-  clear.addEventListener("click", () => {
+  cleared.addEventListener("click", () => {
     var inpVal = parseFloat(inp.value);
     console.log("Cleared, your value is " + inpVal);
   })
