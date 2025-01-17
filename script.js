@@ -1,4 +1,5 @@
 var inp = document.getElementById("numInp");
+var res = 0;
 
 function submit() {
 
@@ -6,30 +7,38 @@ function submit() {
       
       var accept = document.getElementById("accept");
     
-      var inpVal = parseFloat(inp.value);
+      if (inp.value != 0) {
+        res += parseFloat(inp.value);
+        inp.value = 0;
+      }
+      var resVal = parseFloat(res);
     
-      if (!isNaN(inpVal)) {
-        console.log("The entered number is:", inpVal);
+      if (!isNaN(resVal)) {
+        console.log("The entered number is:", resVal);
       } else {
         console.error("Please enter a valid number.");
       }
      
-    
+      res = 0;
 
 };
 
 function clearValue() {
-  //var inp = document.getElementById("numInp");
+
   inp.value = 0;
+  res = 0;
   var cleared = document.getElementById("clear");
   console.log("Cleared, your value is", inp.value);
-  
-
   
 };
 
 function add() {
   
-  console.log("Add works");
+  var existing = parseFloat(inp.value);
 
+  if (!isNaN(existing)) {
+    res += existing;
+    console.log("Res for reference: " + res);
+    inp.value = "";
+  }
 };
