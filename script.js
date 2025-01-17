@@ -1,13 +1,18 @@
 var inp = document.getElementById("numInp");
 var res = 0;
 
+var addBool = 0;
+var subBool = 0;
+var mulBool = 0;
+var divBool = 0;
+
 function submit() {
 
   
       
       var accept = document.getElementById("accept");
     
-      if (inp.value != 0) {
+      if (inp.value != 0) { // need to configure this to do other stuff like sub/mult/div/etc.
         res += parseFloat(inp.value);
         inp.value = 0;
       }
@@ -41,4 +46,9 @@ function add() {
     console.log("Res for reference: " + res);
     inp.value = "";
   }
+
+  addBool = 1;
+  subBool = 0;
+  mulBool = 0;
+  divBool = 0;
 };
