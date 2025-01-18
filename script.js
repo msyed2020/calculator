@@ -52,3 +52,13 @@ function add() {
   mulBool = 0;
   divBool = 0;
 };
+
+function subtract() {
+
+  // subtract logic...
+
+  subBool = 1;
+  addBool = 0;
+  mulBool = 0;
+  divBool = 0;
+}
