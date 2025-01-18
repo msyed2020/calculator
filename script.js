@@ -83,3 +83,4 @@ function division() {
   mulBool = 0;
 
 }
+
