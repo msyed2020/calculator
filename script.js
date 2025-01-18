@@ -72,3 +72,14 @@ function multiply() {
   subBool = 0;
   divBool = 0;
 }
+
+function division() {
+
+  // division logic...
+
+  divBool = 1;
+  addBool = 0;
+  subBool = 0;
+  mulBool = 0;
+
+}
