@@ -62,3 +62,13 @@ function subtract() {
   mulBool = 0;
   divBool = 0;
 }
+
+function multiply() {
+
+  // multiply logic...
+
+  mulBool = 1;
+  addBool = 0;
+  subBool = 0;
+  divBool = 0;
+}
