@@ -69,7 +69,13 @@ function add() {
 
 function subtract() {
 
-  // subtract logic...
+  var existing = parseFloat(inp.value);
+
+  if (!isNaN(existing)) {
+    res -= existing;
+    console.log("Res for reference: " + res);
+    inp.value = "";
+  }
 
   subBool = 1;
   addBool = 0;
