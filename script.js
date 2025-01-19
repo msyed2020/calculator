@@ -7,13 +7,11 @@ var mulBool = 0;
 var divBool = 0;
 
 function submit() {
-
-  
       
       var accept = document.getElementById("accept");
     
       if (inp.value != 0) {
-        
+
         if (addBool === 1) {
           res += parseFloat(inp.value);
           inp.value = 0;
