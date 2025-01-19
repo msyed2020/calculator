@@ -12,9 +12,25 @@ function submit() {
       
       var accept = document.getElementById("accept");
     
-      if (inp.value != 0) { // need to configure this to do other stuff like sub/mult/div/etc.
-        res += parseFloat(inp.value);
-        inp.value = 0;
+      if (inp.value != 0) {
+        
+        if (addBool === 1) {
+          res += parseFloat(inp.value);
+          inp.value = 0;
+        }
+        else if (subBool === 1) {
+          res -= parseFloat(inp.value);
+          inp.value = 0;
+        }
+        else if (mulBool === 1) {
+          res *= parseFloat(inp.value);
+          inp.value = 0;
+        }
+        else if (divBool === 1) {
+          res /= parseFloat(inp.value);
+          inp.value = 0;
+        }
+
       }
       var resVal = parseFloat(res);
     
