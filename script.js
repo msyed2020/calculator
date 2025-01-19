@@ -101,7 +101,13 @@ function multiply() {
 
 function division() {
 
-  // division logic...
+  var existing = parseFloat(inp.value);
+
+  if (!isNaN(existing)) {
+    res /= existing;
+    console.log("Res for reference: " + res);
+    inp.value = "";
+  }
 
   divBool = 1;
   addBool = 0;
