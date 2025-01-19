@@ -85,7 +85,13 @@ function subtract() {
 
 function multiply() {
 
-  // multiply logic...
+  var existing = parseFloat(inp.value);
+
+  if (!isNaN(existing)) {
+    res *= existing;
+    console.log("Res for reference: " + res);
+    inp.value = "";
+  }
 
   mulBool = 1;
   addBool = 0;
