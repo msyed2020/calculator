@@ -67,7 +67,7 @@ function add() {
   divBool = 0;
 };
 
-function subtract() {
+function subtract() { // first input value needs to be positive (fix)
 
   var existing = parseFloat(inp.value);
 
