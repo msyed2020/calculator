@@ -36,11 +36,11 @@ function submit() {
     
       if (!isNaN(resVal)) {
         console.log("The entered number is:", resVal);
+        inp.value = resVal;
       } else {
         console.error("Please enter a valid number.");
       }
 
-      inp.value = res;
 
       addBool = 0;
       subBool = 0;
