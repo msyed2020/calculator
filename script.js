@@ -76,6 +76,15 @@ function subtract() { // first input value needs to be positive (fix)
   if (firstTime === 1) {
     res = existing;
     firstTime = 0;
+
+    console.log("Res for reference: " + res);
+    inp.value = "";
+
+    subBool = 1;
+    addBool = 0;
+    mulBool = 0;
+    divBool = 0;
+    
     return;
   }
 
