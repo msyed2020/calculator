@@ -16,19 +16,19 @@ function submit() {
 
         if (addBool === 1) {
           res += parseFloat(inp.value);
-          inp.value = 0;
+          
         }
         else if (subBool === 1) {
           res -= parseFloat(inp.value);
-          inp.value = 0;
+
         }
         else if (mulBool === 1) {
           res *= parseFloat(inp.value);
-          inp.value = 0;
+
         }
         else if (divBool === 1) {
           res /= parseFloat(inp.value);
-          inp.value = 0;
+
         }
 
       }
@@ -39,8 +39,15 @@ function submit() {
       } else {
         console.error("Please enter a valid number.");
       }
+
+      inp.value = res;
+
+      addBool = 0;
+      subBool = 0;
+      mulBool = 0;
+      divBool = 0;
      
-      res = 0;
+      //res = 0;
       firstTime = 1;
 };
 
@@ -49,6 +56,12 @@ function clearValue() {
   inp.value = 0;
   res = 0;
   var cleared = document.getElementById("clear");
+
+  addBool = 0;
+  subBool = 0;
+  mulBool = 0;
+  divBool = 0;
+
   console.log("Cleared, your value is", inp.value);
   
 };
