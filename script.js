@@ -6,6 +6,8 @@ var subBool = 0;
 var mulBool = 0;
 var divBool = 0;
 
+var firstTime = 1;
+
 function submit() {
       
       var accept = document.getElementById("accept");
@@ -39,7 +41,7 @@ function submit() {
       }
      
       res = 0;
-
+      firstTime = 1;
 };
 
 function clearValue() {
@@ -70,6 +72,12 @@ function add() {
 function subtract() { // first input value needs to be positive (fix)
 
   var existing = parseFloat(inp.value);
+
+  if (firstTime == 1) {
+    res = existing;
+    firstTime = 0;
+    return;
+  }
 
   if (!isNaN(existing)) {
     res -= existing;
