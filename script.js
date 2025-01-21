@@ -107,6 +107,15 @@ function multiply() {
   if (firstTime === 1) {
     res = existing;
     firstTime = 0;
+
+    console.log("Res for reference: " + res);
+    inp.value = "";
+
+    mulBool = 1;
+    addBool = 0;
+    subBool = 0;
+    divBool = 0;
+    
     return;
   }
 
