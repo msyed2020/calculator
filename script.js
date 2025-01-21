@@ -149,6 +149,21 @@ function division() {
 
   var existing = parseFloat(inp.value);
 
+  if (firstTime === 1) {
+    res = existing;
+    firstTime = 0;
+
+    console.log("Res for reference: " + res);
+    inp.value = "";
+
+    divBool = 1;
+    addBool = 0;
+    subBool = 0;
+    mulBool = 0;
+    
+    return;
+  }
+
   if (!isNaN(existing)) {
     res /= existing;
     console.log("Res for reference: " + res);
