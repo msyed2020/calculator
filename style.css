@@ -13,3 +13,50 @@ body {
     background: #f5f5f5;
 }
 
+.calc {
+    width: 300px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.calc_disp {
+    background: #333;
+    padding: 15px;
+}
+
+.calc_disp input {
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+  }
+
+.calc_buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #444;
+    gap: 10px;
+    padding: 15px;
+}
+
+.calc_buttons button {
+    background: #666;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Arial', sans-serif;
+  }
+  
