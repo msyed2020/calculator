@@ -73,7 +73,7 @@ function subtract() { // first input value needs to be positive (fix)
 
   var existing = parseFloat(inp.value);
 
-  if (firstTime == 1) {
+  if (firstTime === 1) {
     res = existing;
     firstTime = 0;
     return;
@@ -94,6 +94,12 @@ function subtract() { // first input value needs to be positive (fix)
 function multiply() {
 
   var existing = parseFloat(inp.value);
+
+  if (firstTime === 1) {
+    res = existing;
+    firstTime = 0;
+    return;
+  }
 
   if (!isNaN(existing)) {
     res *= existing;
